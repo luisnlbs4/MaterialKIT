@@ -5,7 +5,9 @@
 }
 
 body {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-image: url('../assets/img/profile_city.jpg');
+	background-size: cover;
+	background-position: top center;
 }
 
 #login-conatiner{
@@ -60,4 +62,25 @@ body {
 
 #forgotpassword{
 	float: right;
+}
+
+
+#footer{
+ background-color:transparent;
+ color:white
+}
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+	color: white;
 }
