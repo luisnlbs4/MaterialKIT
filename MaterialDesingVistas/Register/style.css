@@ -8,7 +8,7 @@
 body {
 	background-image: url('../assets/img/profile_city.jpg');
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 }
 
 #login-conatiner{
@@ -62,24 +62,26 @@ body {
 #forgotpassword{
 	float: right;
 }
-
-
 #footer{
  background-color:transparent;
  color:white
 }
 
 
-html {
-  min-height: 100%;
-  position: relative;
-}
-body {
-  margin: 0;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-	color: white;
+@media (max-width: 800px) and (min-width: 300px) {
+	#card-heading{
+		text-align: center;
+	    font-weight: 600;
+	    font-size: 25px;
+	    height: 40px;
+	    padding-top: 40px;
+	    color: #092e44
+	}
+
+	html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
