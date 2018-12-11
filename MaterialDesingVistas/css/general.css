@@ -1,3 +1,7 @@
+#all {
+	margin: 0px;
+	padding: 0px;
+}
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -55,4 +59,22 @@ html, body {
   font-size: 24px;
   color: white;
   margin-right: 32px;
+}
+
+@media (max-width: 800px) and (min-width: 300px) {
+	#card-heading{
+		text-align: center;
+	    font-weight: 600;
+	    font-size: 25px;
+	    height: 40px;
+	    padding-top: 40px;
+	    color: #092e44
+	}
+
+	html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }

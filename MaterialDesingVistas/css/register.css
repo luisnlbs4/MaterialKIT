@@ -1,30 +1,22 @@
-* {
-	overflow-x: hidden;
-	margin: 0px;
-	padding: 0px;
-}
-
-body {
+.body-all {
 	background-image: url('../assets/img/profile_city.jpg');
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 }
 
 #login-conatiner{
 	margin: auto;
 }
 
-.mdl-card, .mdl-card__supporting-text {
-    overflow: inherit !important;
-}
-
-
-.mdl-card {
+.mdl-card-register {
+		align-items: center;
     overflow: visible !important;
     z-index: auto !important;
+		width: 80%;
 }
-
-
+.mdl-textfield{
+	width: 100%;
+}
 #login-fab {
 	border-radius: 50%;
     height: 56px;
@@ -62,28 +54,4 @@ body {
 
 #forgotpassword{
 	float: right;
-}
-
-
-#footer{
- background-color:transparent;
- color:white
-}
-
-
-@media (max-width: 800px) and (min-width: 300px) {
-	#card-heading{
-		text-align: center;
-	    font-weight: 600;
-	    font-size: 25px;
-	    height: 40px;
-	    padding-top: 40px;
-	    color: #092e44
-	}
-	html, body {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
 }
