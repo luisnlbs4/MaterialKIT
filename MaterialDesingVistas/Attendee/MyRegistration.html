@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>My Registration</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/general.css">
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--blue-grey-800 mdl-color-text--white">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">My Registration</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+            <h4>ESUG</h4>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="Home.html"><i class="mdl-color-text--white material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link active-link" href="MyRegistration.html"><i class="mdl-color-text--white material-icons" role="presentation">assignment</i>My Registration</a>
+          <a class="mdl-navigation__link" href="Admin.html"><i class="mdl-color-text--white material-icons" role="presentation">person</i>Admin</a>
+          <a class="mdl-navigation__link" href="../login/index.html"><i class="mdl-color-text--white material-icons" role="presentation">backspace</i>Logout</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+          <div class="mdl-card mdl-card__supporting-text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+                <div class="mdl-layout__content">
+                    <a href="#summary-panel" class="mdl-tabs__tab is-active">Summary</a>
+                    <a href="#talks-panel" class="mdl-tabs__tab">Proposed Talks</a>
+                    <a href="#awards-panel" class="mdl-tabs__tab">Proposed Awards</a>
+                </div>
+
+                <div class="mdl-tabs__panel is-active" id="summary-panel">
+                  <h3>Registration Summary</h3>
+                  <hr>
+                  <p> <strong> Attendace Date(s): </strong> Monday 10, Tuesday 11, Wednesday 12, Thursday 13 and Friday 14</p>
+                  <p> <strong> Payment Status: </strong> Payment no registered yet. Amount due: 660.00 Euros (NOTE: you could have paid but we could have not registered it yet)</p>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                    Modify Registration Information
+                  </button>
+                  <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                    Pay
+                  </a>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                    Get my invoice
+                  </button>
+                </div>
+                <div class="mdl-tabs__panel" id="talks-panel">
+                  <h3>Submitted Talks</h3>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Name(D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Uploaded File</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 4 </h6>
+                </div>
+                <div class="mdl-tabs__panel" id="awards-panel">
+                  <h3>Submitted Awards</h3>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Name(D)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 4 </h6>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
