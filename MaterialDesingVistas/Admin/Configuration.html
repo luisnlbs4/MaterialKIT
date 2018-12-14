@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Configuration-Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/general.css">
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--blue-grey-800 mdl-color-text--white">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Configuration</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+            <h4>ESUG</h4>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="Home.html"><i class="mdl-color-text--white material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link active-link" href="Configuration.html"><i class="mdl-color-text--white material-icons" role="presentation">settings</i>Configuration</a>
+          <a class="mdl-navigation__link" href="Admin.html"><i class="mdl-color-text--white material-icons" role="presentation">person</i>Admin</a>
+          <a class="mdl-navigation__link" href="../login/index.html"><i class="mdl-color-text--white material-icons" role="presentation">backspace</i>Logout</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+          <div class="mdl-card mdl-card__supporting-text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+                <div class="mdl-layout__content">
+                    <a href="#conference-panel" class="mdl-tabs__tab is-active">Conference</a>
+                    <a href="#fees-panel" class="mdl-tabs__tab">Fees</a>
+                    <a href="#tickets-panel" class="mdl-tabs__tab">Tickets</a>
+                    <a href="#users-panel" class="mdl-tabs__tab">Users</a>
+                    <a href="#attendees-panel" class="mdl-tabs__tab">Attendees</a>
+                    <a href="#groupManager-panel" class="mdl-tabs__tab">Group Manager</a>
+                    <a href="#talks-panel" class="mdl-tabs__tab">Talks</a>
+                    <a href="#awards-panel" class="mdl-tabs__tab">Awards</a>
+                    <a href="#statistics-panel" class="mdl-tabs__tab">Statistics</a>
+                </div>
+
+                <div class="mdl-tabs__panel is-active" id="conference-panel">
+                  <h3>Conference Configuration</h3>
+                  <hr>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="ESUG">
+                    <label class="mdl-textfield__label">Name :</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="ESUG International....... ">
+                    <label class="mdl-textfield__label">Description :</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="https://www.esug.org">
+                    <label class="mdl-textfield__label">Home page :</label>
+                  </div>
+
+                  <p> <strong>Dates:</strong> </p>
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                     <input class="mdl-textfield__input" placeholder="dd/mm/yy" type="text" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"/>
+                     <label class="mdl-textfield__label" for="demo-input">From: </label>
+                     <span class="mdl-textfield__error">Input is not a date</span>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                     <input class="mdl-textfield__input" placeholder="dd/mm/yy" type="text" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"/>
+                     <label class="mdl-textfield__label" for="demo-input">To: </label>
+                     <span class="mdl-textfield__error">Input is not a date</span>
+                  </div>
+
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                     <input class="mdl-textfield__input" placeholder="dd/mm/yy" type="text" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"/>
+                     <label class="mdl-textfield__label" for="demo-input">Submission Deadline: </label>
+                     <span class="mdl-textfield__error">Input is not a date</span>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                     <input class="mdl-textfield__input" placeholder="dd/mm/yy" type="text" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"/>
+                     <label class="mdl-textfield__label" for="demo-input">Early Registration Deadline: </label>
+                     <span class="mdl-textfield__error">Input is not a date</span>
+                  </div>
+
+
+                  <h3>Email Configuration</h3>
+                  <hr>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="registration@esug.org">
+                    <label class="mdl-textfield__label">Sender Email Address :</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="localhost">
+                    <label class="mdl-textfield__label">Smtp Server Address :</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <select class="mdl-textfield__input" id="SmtpClient" name="octane">
+                      <option value="01">PatSmtpToPPostMarkClientAdapter</option>
+                      <option value="02">example1</option>
+                      <option value="03">exampl33</option>
+                    </select>
+                    <label class="mdl-textfield__label" for="SmtpClient">Smtp Client:</label>
+                  </div>
+
+                  <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                   <textarea class = "mdl-textfield__input" type = "text" rows =  "5" cols="100%"
+                      id = "text">Welcome to this great conference</textarea>
+                   <label class = "mdl-textfield__label" for = "text">Welcome Text</label>
+                  </div>
+
+
+                  <h3>Organizer</h3>
+                  <hr>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="ESUG">
+                    <label class="mdl-textfield__label">Name:</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="Assoation lo 1901">
+                    <label class="mdl-textfield__label">Fisical Situation:</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="http://www.esug.org">
+                    <label class="mdl-textfield__label">Web Page Url:</label>
+                  </div>
+                  <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                   <textarea class = "mdl-textfield__input" type = "text" rows =  "5" cols="100%"
+                      id = "text">c/o Mr. Step example exaple exaple </textarea>
+                   <label class = "mdl-textfield__label" for = "text">Address String: </label>
+                  </div>
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
+                    Accept
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
+                    Cancel
+                  </button>
+                </div>
+
+                <div class="mdl-tabs__panel" id="fees-panel">
+                  <h3>Fees</h3>
+                  <a href="RegisterAttend.html" class="mdl-button mdl-js-button mdl-button--colored">
+                    add
+                  </a>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Currency(D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Early Days</th>
+                          <th class="mdl-data-table__cell--non-numeric">Earlt One Day</th>
+                          <th class="mdl-data-table__cell--non-numeric">Late All Days</th>
+                          <th class="mdl-data-table__cell--non-numeric">Late One Day</th>
+                          <th class="mdl-data-table__cell--non-numeric"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Euro</td>
+                          <td class="mdl-data-table__cell--non-numeric">470.00</td>
+                          <td class="mdl-data-table__cell--non-numeric">170.00</td>
+                          <td class="mdl-data-table__cell--non-numeric">660.00</td>
+                          <td class="mdl-data-table__cell--non-numeric">210.00</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 1 </h6>
+                </div>
+
+
+
+                <div class="mdl-tabs__panel" id="tickets-panel">
+                  <h3>Reduction Tickets</h3>
+                  <a href="RegisterAttend.html" class="mdl-button mdl-js-button mdl-button--colored">
+                    add
+                  </a>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Id (D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Discount Strategy</th>
+                          <th class="mdl-data-table__cell--non-numeric">Use Limit Strategy</th>
+                          <th class="mdl-data-table__cell--non-numeric">Used Times</th>
+                          <th class="mdl-data-table__cell--non-numeric"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Cincom7878</td>
+                          <td class="mdl-data-table__cell--non-numeric">Discount of 20.00 %</td>
+                          <td class="mdl-data-table__cell--non-numeric">Used limited to 10</td>
+                          <td class="mdl-data-table__cell--non-numeric">0</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Cincom7878</td>
+                          <td class="mdl-data-table__cell--non-numeric">Discount of 20.00 %</td>
+                          <td class="mdl-data-table__cell--non-numeric">Used limited to 10</td>
+                          <td class="mdl-data-table__cell--non-numeric">0</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Cincom7878</td>
+                          <td class="mdl-data-table__cell--non-numeric">Discount of 20.00 %</td>
+                          <td class="mdl-data-table__cell--non-numeric">Used limited to 10</td>
+                          <td class="mdl-data-table__cell--non-numeric">0</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Cincom7878</td>
+                          <td class="mdl-data-table__cell--non-numeric">Discount of 20.00 %</td>
+                          <td class="mdl-data-table__cell--non-numeric">Used limited to 10</td>
+                          <td class="mdl-data-table__cell--non-numeric">0</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 4 </h6>
+                </div>
+
+
+
+                <div class="mdl-tabs__panel" id="users-panel">
+                  <h3>All Users</h3>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    add
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    export
+                  </a>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Name (D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Admin Role</th>
+                          <th class="mdl-data-table__cell--non-numeric">Email</th>
+                          <th class="mdl-data-table__cell--non-numeric"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Admin Admin</td>
+                          <td class="mdl-data-table__cell--non-numeric">root</td>
+                          <td class="mdl-data-table__cell--non-numeric">admin@esug.org</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Admin Admin</td>
+                          <td class="mdl-data-table__cell--non-numeric">root</td>
+                          <td class="mdl-data-table__cell--non-numeric">admin@esug.org</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Admin Admin</td>
+                          <td class="mdl-data-table__cell--non-numeric">root</td>
+                          <td class="mdl-data-table__cell--non-numeric">admin@esug.org</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Admin Admin</td>
+                          <td class="mdl-data-table__cell--non-numeric">root</td>
+                          <td class="mdl-data-table__cell--non-numeric">admin@esug.org</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 4 </h6>
+                </div>
+
+
+                <div class="mdl-tabs__panel" id="attendees-panel">
+                  <h3>Attendees</h3>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Register Attendee with New User
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Register Attendee with Existing User
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Register Myself as Attendee
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Export
+                  </a>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">#Invoice (D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Name</th>
+                          <th class="mdl-data-table__cell--non-numeric">Email</th>
+                          <th class="mdl-data-table__cell--non-numeric">Country</th>
+                          <th class="mdl-data-table__cell--non-numeric">Affiliation</th>
+                          <th class="mdl-data-table__cell--non-numeric">Fee</th>
+                          <th class="mdl-data-table__cell--non-numeric">Has Paid?</th>
+                          <th class="mdl-data-table__cell--non-numeric">Checked?</th>
+                          <th class="mdl-data-table__cell--non-numeric"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">10</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">email@gmail.com</td>
+                          <td class="mdl-data-table__cell--non-numeric">Afghanistan</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">660.00 Euros</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                          <a href="">Not Paid</a>
+                          </td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <a href="">Not Checked</a>
+                          </td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify User
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Apply Reduction
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Send Invoice
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">10</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">email@gmail.com</td>
+                          <td class="mdl-data-table__cell--non-numeric">Afghanistan</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">660.00 Euros</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                          <a href="">Not Paid</a>
+                          </td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <a href="">Not Checked</a>
+                          </td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify User
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Apply Reduction
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Send Invoice
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 2 </h6>
+                </div>
+
+                <div class="mdl-tabs__panel" id="groupManager-panel">
+                  <h3>Group Manager</h3>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Add Group Manager with New User
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Register Attendee with Existing User
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Add Myself as Group Manager
+                  </a>
+                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                    Export
+                  </a>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Name (D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Email</th>
+                          <th class="mdl-data-table__cell--non-numeric">Organization</th>
+                          <th class="mdl-data-table__cell--non-numeric">Remaing Fee</th>
+                          <th class="mdl-data-table__cell--non-numeric">Have all Pay?</th>
+                          <th class="mdl-data-table__cell--non-numeric"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">email@gmail.com</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">660.00 Euros</td>
+                          <td class="mdl-data-table__cell--non-numeric">No</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify User
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Invoice
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">email@gmail.com</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">660.00 Euros</td>
+                          <td class="mdl-data-table__cell--non-numeric">No</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify User
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Invoice
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">email@gmail.com</td>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">660.00 Euros</td>
+                          <td class="mdl-data-table__cell--non-numeric">No</td>
+                          <td class="mdl-data-table__cell--non-numeric">
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Delete
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Modify User
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Reset Password
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--colored">
+                              Invoice
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 3 </h6>
+                </div>
+
+                <div class="mdl-tabs__panel" id="talks-panel">
+                  <h3>Submitted Talks</h3>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Name(D)</th>
+                          <th class="mdl-data-table__cell--non-numeric">Uploaded File</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                          <td class="mdl-data-table__cell--non-numeric">example@gmail.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 4 </h6>
+                </div>
+                <div class="mdl-tabs__panel" id="awards-panel">
+                  <h3>Submitted Awards</h3>
+                  <hr>
+                  <div style="overflow-x:auto;">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Name(D)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">example</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6> <strong>Total: </strong> 4 </h6>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
