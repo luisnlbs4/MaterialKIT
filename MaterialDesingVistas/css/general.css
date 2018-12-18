@@ -60,6 +60,12 @@ html, body {
   color: white;
   margin-right: 32px;
 }
+.mdl-card-add {
+		align-items: center;
+    overflow: visible !important;
+    z-index: auto !important;
+		width: 80%;
+}
 
 @media (max-width: 800px) and (min-width: 300px) {
 	#card-heading{

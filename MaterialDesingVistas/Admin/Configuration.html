@@ -148,10 +148,110 @@
 
                 <div class="mdl-tabs__panel" id="fees-panel">
                   <h3>Fees</h3>
-                  <a href="#" class="mdl-button mdl-js-button mdl-button--colored">
+                  <button id="show-dialog" class="mdl-button mdl-js-button mdl-button--colored">
                     add
-                  </a>
+                  </button>
                   <hr>
+                    <!-- modal contenido -->
+                    <dialog class="mdl-dialog mdl-card-add mdl-card__supporting-text ">
+                      <div class="mdl-dialog__content">
+                        <strong>Conference Fee:</strong><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <select class="mdl-textfield__input" id="SmtpClient" name="octane">
+                            <option value="01">Euro</option>
+                            <option value="02">example1</option>
+                            <option value="03">exampl33</option>
+                          </select>
+                          <label class="mdl-textfield__label" for="SmtpClient">Currency:</label>
+                        </div>
+                        <div class = "mdl-grid">
+                              <div class = "mdl-cell mdl-cell--6-col">
+                              <strong>Early Registration Fee:</strong><br>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">All days Fee:</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">One day Fee:</label>
+                              </div>
+                              </div>
+                              <div class = "mdl-cell mdl-cell--6-col">
+                              <strong>Late Registration Fee:</strong><br>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">All days Fee:</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">One day Fee:</label>
+                              </div>
+                              </div>
+                        </div>
+                        <strong>Bank Account Information: </strong><br>
+                        <div class = "mdl-grid">
+                              <div class = "mdl-cell mdl-cell--6-col">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">Owner:</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">Number:</label>
+                              </div>
+                              </div>
+                              <div class = "mdl-cell mdl-cell--6-col">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">IBAN:</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">Rib Key:</label>
+                              </div>
+                              </div>
+                        </div>
+                        <strong>Bank Information:</strong><br>
+                        <div class = "mdl-grid">
+                              <div class = "mdl-cell mdl-cell--6-col">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">Name:</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">Code:</label>
+                              </div>
+                              </div>
+                              <div class = "mdl-cell mdl-cell--6-col">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">Counter Code:</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:49%">
+                               <input class="mdl-textfield__input" type="text">
+                               <label class="mdl-textfield__label">BIC:</label>
+                              </div>
+                              </div>
+                        </div>
+
+                        <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                         <textarea class = "mdl-textfield__input" type = "text" rows =  "2" cols="100%"
+                            id = "text"></textarea>
+                         <label class = "mdl-textfield__label" for = "text">Address String</label>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                         <input class="mdl-textfield__input" type="text">
+                         <label class="mdl-textfield__label">Pay Pal URL:</label>
+                        </div>
+                      </div>
+                      <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Cancel</button>
+                        <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored close">Accept</button>
+                      </div>
+                    </dialog>
+
                   <div style="overflow-x:auto;">
                     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
                       <thead>
@@ -190,9 +290,62 @@
 
                 <div class="mdl-tabs__panel" id="tickets-panel">
                   <h3>Reduction Tickets</h3>
-                  <a href="RegisterAttend.html" class="mdl-button mdl-js-button mdl-button--colored">
+
+                  <button id="show-dialogadd" class="mdl-button mdl-js-button mdl-button--colored">
                     add
-                  </a>
+                  </button>
+                  <dialog class="mdl-dialog mdl-card-add mdl-card__supporting-text dialogAdd">
+                    <div class="mdl-dialog__content">
+
+                      <h3>Reduction Tickets</h3><hr>
+
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text">
+                        <label class="mdl-textfield__label">Id:</label>
+                      </div>
+
+                      <strong>Discount Stategy: </strong><br>
+
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <select class="mdl-textfield__input" id="SmtpClient" name="octane">
+                          <option value="01">Fix Discount</option>
+                          <option value="02">example1</option>
+                          <option value="03">exampl33</option>
+                        </select>
+                        <label class="mdl-textfield__label" for="SmtpClient">Strategy:</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text">
+                        <label class="mdl-textfield__label">Amount :</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <select class="mdl-textfield__input" id="SmtpClient" name="octane">
+                          <option value="01">Euro</option>
+                          <option value="02">example1</option>
+                          <option value="03">example3</option>
+                        </select>
+                        <label class="mdl-textfield__label" for="SmtpClient">Currency:</label>
+                      </div>
+
+                      <strong>Use limit Strategy: </strong><br>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <select class="mdl-textfield__input" id="SmtpClient" name="octane">
+                          <option value="01">Limitd Use</option>
+                          <option value="02">example1</option>
+                          <option value="03">example3</option>
+                        </select>
+                        <label class="mdl-textfield__label" for="SmtpClient">Stategy:</label>
+                      </div>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text">
+                        <label class="mdl-textfield__label">Limit :</label>
+                      </div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Cancel</button>
+                      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored close">Accept</button>
+                    </div>
+                  </dialog>
                   <hr>
                   <div style="overflow-x:auto;">
                     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
@@ -272,9 +425,9 @@
 
                 <div class="mdl-tabs__panel" id="users-panel">
                   <h3>All Users</h3>
-                  <a href="" class="mdl-button mdl-js-button mdl-button--colored">
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
                     add
-                  </a>
+                  </button>
                   <a href="" class="mdl-button mdl-js-button mdl-button--colored">
                     export
                   </a>
@@ -953,6 +1106,7 @@
         </div>
       </main>
     </div>
+    <script src="../Scripts/dialog.js"></script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
