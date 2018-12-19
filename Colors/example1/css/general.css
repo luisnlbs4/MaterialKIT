@@ -1,0 +1,86 @@
+#all {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+  color: white;
+}
+
+.demo-drawer {
+  border: none;
+}
+
+.demo-drawer-header {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+  height: 151px;
+}
+
+.demo-navigation {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.demo-layout .demo-navigation .mdl-navigation__link {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 500;
+}
+.demo-layout .demo-navigation .mdl-navigation__link:hover {
+  background-color: #ff1744;
+  color: white;
+}
+.active-link{
+  background-color: #ff1744;
+  color: white;
+}
+.demo-navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  color: white;
+  margin-right: 32px;
+}
+.mdl-card-add {
+		align-items: center;
+    overflow: visible !important;
+    z-index: auto !important;
+		width: 80%;
+}
+
+@media (max-width: 800px) and (min-width: 300px) {
+	#card-heading{
+		text-align: center;
+	    font-weight: 600;
+	    font-size: 25px;
+	    height: 40px;
+	    padding-top: 40px;
+	    color: #092e44
+	}
+
+	html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
