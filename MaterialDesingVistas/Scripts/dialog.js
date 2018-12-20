@@ -24,3 +24,13 @@ dialogadd.querySelector('.close').addEventListener('click', function() {
 dialog.querySelector('.close').addEventListener('click', function() {
   dialog.close();
 });
+
+function alertMyConfirm(message,page) {
+  var state = confirm(message);
+   if(state){
+     window.location.href = page;
+   }else
+   {
+     alert("You pressed false!");
+   }
+}
