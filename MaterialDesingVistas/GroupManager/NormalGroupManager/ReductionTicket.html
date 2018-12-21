@@ -6,10 +6,10 @@
     <title>Home-GoupManager</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
-    <link rel="stylesheet" href="../css/register.css">
-    <link rel="stylesheet" href="../css/tabs.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../../css/register.css">
+    <link rel="stylesheet" href="../../css/tabs.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/general.css">
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -27,22 +27,23 @@
           <a class="mdl-navigation__link" href="Home.html"><i class="mdl-color-text--white material-icons" role="presentation">home</i>Home</a>
           <a class="mdl-navigation__link active-link" href="GroupRegistration.html"><i class="mdl-color-text--white material-icons" role="presentation">group</i>Group Registration</a>
           <a class="mdl-navigation__link" href="Admin.html"><i class="mdl-color-text--white material-icons" role="presentation">person</i>Admin</a>
-          <a class="mdl-navigation__link" href="../login/index.html"><i class="mdl-color-text--white material-icons" role="presentation">backspace</i>Logout</a>
+          <a class="mdl-navigation__link" href="../../login/index.html"><i class="mdl-color-text--white material-icons" role="presentation">backspace</i>Logout</a>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-card mdl-card__supporting-text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
           <div class="mdl-js-ripple-effect">
-            <h3> <strong> Amount to pay : 1980.00 Euros. Please choose payment Type:</strong> </h3>
+            <h3>Apply Reduction Ticket</h3>
             <hr>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <select class="mdl-textfield__input" id="Country_affiliation" name="MemberShip">
-                <option value="CreditCard">Credit Card</option>
-                <option value="Bank Transfer">Bank Transfer</option>
+              <select class="mdl-textfield__input" id="shirt" name="MemberShip">
+                <option value="No">No Reduction Code</option>
+                <option value="example1">example 1</option>
+                <option value="example2">example 2</option>
               </select>
-              <label class="mdl-textfield__label" for="shirt">Country</label>
+              <label class="mdl-textfield__label" for="shirt">Reduction Ticket Code:</label>
             </div>
-            <a href="BankTransfer.html" class="mdl-button mdl-js-button mdl-button--colored">
+            <a href="GroupRegistration.html" class="mdl-button mdl-js-button mdl-button--colored">
               Accept
             </a>
             <a href="GroupRegistration.html" class="mdl-button mdl-js-button mdl-button--colored">
@@ -51,7 +52,7 @@
         </div>
       </div>
       </main>
-    <script src="../Scripts/dialog.js"></script>
+    <script src="../../Scripts/dialog.js"></script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>

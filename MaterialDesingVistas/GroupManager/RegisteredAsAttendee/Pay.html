@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Home-GoupManager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
+    <link rel="stylesheet" href="../../css/register.css">
+    <link rel="stylesheet" href="../../css/tabs.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/general.css">
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--blue-grey-800 mdl-color-text--white">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Group Registration</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+            <h4>ESUG</h4>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="Home.html"><i class="mdl-color-text--white material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="MyRegistration.html"><i class="mdl-color-text--white material-icons" role="presentation">assignment</i>My Registration</a>
+          <a class="mdl-navigation__link active-link" href="GroupRegistration.html"><i class="mdl-color-text--white material-icons" role="presentation">group</i>Group Registration</a>
+          <a class="mdl-navigation__link" href="Admin.html"><i class="mdl-color-text--white material-icons" role="presentation">person</i>Admin</a>
+          <a class="mdl-navigation__link" href="../../login/index.html"><i class="mdl-color-text--white material-icons" role="presentation">backspace</i>Logout</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-card mdl-card__supporting-text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-js-ripple-effect">
+            <h3> <strong> Amount to pay : 1980.00 Euros. Please choose payment Type:</strong> </h3>
+            <hr>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <select class="mdl-textfield__input" id="Country_affiliation" name="MemberShip">
+                <option value="CreditCard">Credit Card</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+              </select>
+              <label class="mdl-textfield__label" for="shirt">Country</label>
+            </div>
+            <a href="BankTransfer.html" class="mdl-button mdl-js-button mdl-button--colored">
+              Accept
+            </a>
+            <a href="GroupRegistration.html" class="mdl-button mdl-js-button mdl-button--colored">
+              Cancel
+            </a>
+        </div>
+      </div>
+      </main>
+    <script src="../../Scripts/dialog.js"></script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

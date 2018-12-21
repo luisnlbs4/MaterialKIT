@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Home-GoupManager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
+    <link rel="stylesheet" href="../../css/register.css">
+    <link rel="stylesheet" href="../../css/tabs.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/general.css">
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--blue-grey-800 mdl-color-text--white">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Admin</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+            <h4>ESUG</h4>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="Home.html"><i class="mdl-color-text--white material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="MyRegistration.html"><i class="mdl-color-text--white material-icons" role="presentation">assignment</i>My Registration</a>
+          <a class="mdl-navigation__link" href="GroupRegistration.html"><i class="mdl-color-text--white material-icons" role="presentation">group</i>Group Registration</a>
+          <a class="mdl-navigation__link active-link" href="Admin.html"><i class="mdl-color-text--white material-icons" role="presentation">person</i>Admin</a>
+          <a class="mdl-navigation__link" href="../../login/index.html"><i class="mdl-color-text--white material-icons" role="presentation">backspace</i>Logout</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+          <div class="mdl-card mdl-card__supporting-text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+                <div class="mdl-layout__content">
+                    <a href="#user-panel" class="mdl-tabs__tab is-active">User</a>
+                    <a href="#password-panel" class="mdl-tabs__tab">Change Password</a>
+                </div>
+
+                <div class="mdl-tabs__panel is-active" id="user-panel" style="width:100%">
+                  <h3>User</h3>
+                  <hr>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="example">
+                    <label class="mdl-textfield__label">First Name :</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" value="example">
+                    <label class="mdl-textfield__label">Last Name :</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="email" value="example@gmail.com">
+                    <label class="mdl-textfield__label">Email</label>
+                  </div>
+                  <br>
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
+                    Accept
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
+                    Cancel
+                  </button>
+                </div>
+
+                <div class="mdl-tabs__panel" id="password-panel" style="width:100%">
+                  <h3>Modify Password</h3>
+                  <hr>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password">
+                    <label class="mdl-textfield__label">Current Password (Required) :</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password">
+                    <label class="mdl-textfield__label">Password (Required) :</label>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password">
+                    <label class="mdl-textfield__label">Password Copy (Required) :</label>
+                  </div>
+                  <br>
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
+                    Accept
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-button--colored">
+                    Cancel
+                  </button>
+                </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
