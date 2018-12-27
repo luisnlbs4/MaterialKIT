@@ -18,26 +18,28 @@
       <div  class="mdl-layout mdl-js-layout">
             <div id="login-conatiner" class="mdl-card mdl-shadow--16dp">
                 <div class="mdl-card__supporting-text">
-                  <div id="login-fab" class="mdl-color--red mdl-color-text--white">
+                  <div id="login-fab" class="mdl-color--blue-700 mdl-color-text--white">
               <i id="lock-icon" class="material-icons">person</i>
             </div>
             <div id="card-heading">
               User Login
             </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" id="email"/>
-                        <label class="mdl-textfield__label" for="email">Email</label>
-                    </div>
-                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="password" id="password"/>
-                        <label class="mdl-textfield__label" for="password">Password</label>
-                    </div>
-                     <button id="show-dialog" class=" login-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-button--accent mdl-color-text--white">
-                            Login
-                    </button>
+
+            <form action="#" method="post">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="email" id="email" required>
+                  <label class="mdl-textfield__label" for="email">Email</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" pattern="[A-Z,a-z]*" id="password" required/>
+                <label class="mdl-textfield__label" for="password">Password</label>
+                <span class="mdl-textfield__error">Required</span>
+              </div><br><br>
+              <input type="submit" class=" login-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--blue-700 mdl-color-text--white" value="Login">
+            </form>
 
                     <form action="../Register/AttendeeNormalTabs.html" >
-                      <button class="mdl-button login-button mdl-js-button mdl-color-text--accent">
+                      <button class="mdl-button login-button mdl-js-button mdl-color-text--colored">
                            Register
                     </button>
                     </form>
@@ -56,8 +58,8 @@
                 </div>
 
                 <div class="mdl-card__actions">
-                  <a href="../Register/GroupManager.html" class="mdl-button mdl-js-button mdl-button--primary">Group Manager</a>
-                  <a class="mdl-button mdl-js-button mdl-button--primary">Forgot Password</a>
+                  <a href="../Register/GroupManager.html" class="mdl-button mdl-js-button mdl-color-text--blue">Group Manager</a>
+                  <a class="mdl-button mdl-js-button mdl-color-text--blue">Forgot Password</a>
                 </div>
             </div>
             <!-- <footer id="footer" class = "mdl-mini-footer">
